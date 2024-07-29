@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+
+$blue: #10487a !default;
+
+$font-family-sans-serif: "Public Sans", sans-serif !default;
+$font-size-base: 0.9rem !default;
+
+$border-radius: 0.175rem !default;
+$border-radius-sm: 0.15rem !default;
+$border-radius-lg: 0.3rem !default;
+$border-radius-xl: 0.8rem !default;
+$border-radius-xxl: 1.5rem !default;
+$border-radius-pill: 50rem !default;
+
+$form-label-margin-bottom: 0.2rem !default;
+$form-label-font-weight: 500 !default;
+
+$input-btn-padding-y: 0.409rem !default;
+$input-placeholder-color: #adb5bd !default;
+
+$spinner-width-sm: $font-size-base !default;
+$spinner-border-width-sm: 0.15em !default;
+$spinner-animation-speed: 0.8s !default;
+
+$pagination-padding-y: 0.409rem !default;
