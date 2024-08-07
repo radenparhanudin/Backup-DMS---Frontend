@@ -4,10 +4,6 @@ import { usePageStateContext } from "../../../../contexts/PageContextProvider";
 import SimpleBar from "simplebar-react";
 import LoadingTable from "../../../../components/Loading/LoadingTable";
 import ButtonDetail from "../../../../components/Table/ButtonDetail";
-import { useStateUserContext } from "../../../../contexts/UserContextProvider";
-import ButtonReset from "../../../../components/Table/ButtonReset";
-import Swal from "sweetalert2";
-import { toast } from "react-toastify";
 
 export default function Table() {
   /* Context */
@@ -60,6 +56,7 @@ export default function Table() {
             <table className="table table-hover">
               <thead>
                 <tr>
+                  <th scope="col">Update</th>
                   <th scope="col">USER</th>
                   <th scope="col">Name</th>
                   <th scope="col">Type</th>
@@ -74,7 +71,7 @@ export default function Table() {
               <tbody>
                 {dataTables.length == 0 && (
                   <tr>
-                    <td colSpan={7} className="text-secondary">
+                    <td colSpan={8} className="text-secondary">
                       No data available yet!
                     </td>
                   </tr>
@@ -83,6 +80,7 @@ export default function Table() {
                   dataTables.map((dataTable) => {
                     return (
                       <tr key={dataTable.id}>
+                        <td>{dataTable.tanggal_update}</td>
                         <td className="text-nowrap">
                           {dataTable.user && dataTable.user.username}
                         </td>
